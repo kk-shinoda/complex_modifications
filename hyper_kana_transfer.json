@@ -1,0 +1,24 @@
+{
+  "title": "かな変換",
+  "rules": [
+    {
+      "description": "Hyper + k = かな",
+      "manipulators": [
+         {
+            "type": "basic",
+            "from": {
+                "key_code": "k",
+                "modifiers": {
+                    "mandatory": ["left_control", "left_command", "left_shift", "left_option"]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "japanese_kana"
+                }
+            ]
+         }
+      ]
+    }
+  ]
+}
